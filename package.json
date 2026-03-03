@@ -1,0 +1,19 @@
+{
+  "name": "concurso-cadastro",
+  "version": "1.0.0",
+  "description": "Sistema de cadastro de candidatos para concurso público",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["concurso", "cadastro", "postgresql", "react", "node"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
